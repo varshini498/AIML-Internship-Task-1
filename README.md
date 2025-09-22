@@ -1,53 +1,50 @@
-# 📊 Task 1: Data Cleaning & Preprocessing
+## Task 1: Data Cleaning & Preprocessing
+This repository contains my solution for Task 1 of the AIML  Internship, which focuses on data cleaning and preprocessing.
 
-This repository contains my solution for Task 1 of the A.I./M.L. Internship, which focuses on data cleaning and preprocessing.
-
-## 📝 Objective
-
+## Objective
 The goal of this task was to learn and apply fundamental data preparation techniques on a raw dataset before it can be used for machine learning. The key steps involved were:
-* Handling missing values.
-* Converting categorical features into a numerical format.
-* Standardizing numerical features.
-* Identifying and visualizing outliers.
 
-## ⚙️ Tools Used
+1. Handling missing values.
 
-* **Python**: The main programming language.
-* **Pandas**: For data manipulation and analysis.
-* **NumPy**: For numerical operations.
-* **Matplotlib & Seaborn**: For data visualization (e.g., boxplots).
-* **Scikit-learn**: For feature scaling and imputation.
+2. Converting categorical features into a numerical format.
 
-## 🚀 Steps Taken
+3. Standardizing numerical features.
 
-### 1. Data Exploration
-I started by loading the `Titanic-Dataset.csv` file and using `df.info()` and `df.isnull().sum()` to understand the data types and the extent of missing data.
-(Screenshots/initial_data_info.png)
+4. Identifying and visualizing outliers.
 
-### 2. Handling Missing Values
-* Missing values in the `Age` column were imputed with the **median**.
-* Missing values in the `Embarked` column were imputed with the **mode**.
-* The `Cabin` column was dropped entirely due to a high number of missing values.
+## Tools Used
+Python: The main programming language.
 
-### 3. Encoding Categorical Data
-The `Sex` and `Embarked` columns were converted into a numerical format using **one-hot encoding** with `pd.get_dummies()`.
+Pandas: For data manipulation and analysis.
 
-### 4. Feature Scaling
-The numerical features `Age` and `Fare` were scaled using **`StandardScaler`** from scikit-learn to ensure they have a mean of 0 and a standard deviation of 1.
+NumPy: For numerical operations.
 
-### 5. Outlier Visualization
-I used a boxplot to visualize outliers in the `Fare` column. 
-(Screenshots/fare_boxplot.png)
+Matplotlib & Seaborn: For data visualization (e.g., boxplots).
 
-### 6. Final Preprocessed Data
-After all the steps, the data is ready for a machine learning model.
-(Screenshots/final_preprocessed_data.png)
+Scikit-learn: For feature scaling and imputation.
 
-## 📦 Repository Contents
+## Steps Taken
+1. Data Exploration
+I started by loading the Titanic-Dataset.csv file and using df.info() and df.isnull().sum() to understand the data types and the extent of missing data.
 
-* `data_preprocessing.py`: The Python script containing all the code for data cleaning and preprocessing.
-* `Titanic-Dataset.csv`: The original dataset used for the task.
-* `README.md`: This file, which explains the project.
+2. Handling Missing Values
+Missing values in the Age column were imputed with the median.
 
----
-_Feel free to contact me if you have any questions._
+Missing values in the Embarked column were imputed with the mode.
+
+The Cabin column was dropped entirely due to a high number of missing values.
+
+3. Outlier Visualization
+I used a boxplot to visualize outliers in the Fare column.
+
+4. Encoding & Scaling
+The Sex and Embarked columns were converted into a numerical format using one-hot encoding, and the numerical features Age and Fare were scaled using StandardScaler.
+
+## Repository Contents
+1. data_preprocessing.py: The Python script containing all the code for data cleaning and preprocessing.
+
+2. Titanic-Dataset.csv: The original dataset used for the task.
+
+3. README.md: This file, which explains the project.
+
+4. Screenshots/: This folder contains screenshots of the script's output.
