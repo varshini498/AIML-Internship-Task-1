@@ -22,7 +22,7 @@ The goal of this task was to learn and apply fundamental data preparation techni
 
 ### 1. Data Exploration
 I started by loading the `Titanic-Dataset.csv` file and using `df.info()` and `df.isnull().sum()` to understand the data types and the extent of missing data.
-![Initial Data Info](Screenshots/initial_data_info.png)
+(Screenshots/initial_data_info.png)
 
 ### 2. Handling Missing Values
 * Missing values in the `Age` column were imputed with the **median**.
@@ -37,11 +37,11 @@ The numerical features `Age` and `Fare` were scaled using **`StandardScaler`** f
 
 ### 5. Outlier Visualization
 I used a boxplot to visualize outliers in the `Fare` column. 
-![Boxplot of Fare](Screenshots/fare_boxplot.png)
+(Screenshots/fare_boxplot.png)
 
 ### 6. Final Preprocessed Data
 After all the steps, the data is ready for a machine learning model.
-![Final Preprocessed Data](Screenshots/final_preprocessed_data.png)
+(Screenshots/final_preprocessed_data.png)
 
 ## 📦 Repository Contents
 
